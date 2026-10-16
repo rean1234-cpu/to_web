@@ -1,0 +1,52 @@
+/* រៀបចំ Navbar Container */
+.navbar {
+  display: flex;
+  align-items: center; /* ធ្វើឱ្យ Logo និង Menu នៅរៀបស្មើជួរដេកកណ្តាល vertical */
+  padding: 35px 50px;
+  background-color: #80ffff; /* ពណ៌ cyan ដូចរូបរបស់អ្នក */
+  position: relative; /* ចាំបាច់សម្រាប់ position center nav-links */
+}
+
+/* Styling Logo ឱ្យនៅក្នុង Navbar ស្អាត */
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* តម្រឹម Menu ឱ្យនៅចំកណ្តាល Navbar ទាំងមូល (Absolute Center) */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px; /* ចន្លោះរវាង menu នីមួយៗ */
+  margin: 0;
+  padding: 0;
+
+  /* រញ៉ែកមក center នៃ navbar */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Styling លើ Links ឱ្យគ្មានខ្សែបន្ទាត់ពីក្រោម */
+.nav-links a {
+  text-decoration: none;
+  color: #0000ff; /* ពណ៌ខៀវតាមរូប */
+  font-family: sans-serif;
+  font-size: 36px;
+}
+.nav-links:hover {
+  background-color: rgb(205, 255, 255);
+  border-radius: 20px;
+  gap: 10px;
+}
+
+/* Style សម្រាប់ Link ណាដែលសកម្ម (Active) */
+.nav-links a.active {
+  color: #000000;
+  border: 1.5px solid #000000;
+  border-radius: 20px;
+  padding: 5px 15px;
+  background-color: #ffffff;
+}
